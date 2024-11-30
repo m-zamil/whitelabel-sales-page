@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Inter-fallback';
-  size-adjust: 104%;
+  size-adjust: 95%;
   src: local('Helvetica');
 }
 @font-face {
@@ -101,11 +101,16 @@ strong,
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 400px;
+  overflow: clip;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+}
+.intro__bg img {
+  width: 100vw;
+  object-fit: cover;
 }
 
 .intro__headline {
@@ -275,6 +280,12 @@ strong,
   }
   .video__tag {
     font-size: 1.65rem;
+  }
+  .intro__bg {
+    bottom: 33%;
+  }
+  .intro__bg img {
+    height: 100%;
   }
 }
 /* =================== isnot section ================== */
